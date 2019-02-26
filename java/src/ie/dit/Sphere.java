@@ -2,7 +2,7 @@ package ie.dit;
 import processing.core.*;
 import processing.data.*;
 
-class Sphere
+public class Sphere
 {
     float sphereSize;
     float rotate;
