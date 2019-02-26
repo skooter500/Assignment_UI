@@ -5,11 +5,11 @@ public class UserInterface extends PApplet
 {
     public void settings()
     {
-        size(1500, 800, P3D);
+        size(1500, 800);
     }
 
     float t, r;
-    Sphere sphere = new Sphere(80, 20 * radians(t += (TWO_PI / 360)));
+    Sphere sphere = new Sphere(80, 20 * radians(t += (TWO_PI / 360)), this);
 
     public void setup()
     {
@@ -43,7 +43,7 @@ public class UserInterface extends PApplet
         rotateY(rotateX);
         noFill();
         stroke(0, 255, 255);
-        strokeWeight(0.5);
+        strokeWeight(0.5f);
         sphere(r);
     }
 }
